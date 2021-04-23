@@ -8,14 +8,15 @@
     <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
-    <main>
+  <body class="body">
+    <main class="main">
       <form action="">
         <header><h1>Zgłoszenie</h1></header>
         <p>
           <label for="name">Imię i Nazwisko:</label>
           <input type="text" name="name" id="name" placeholder="Jan Kowalski" />
         </p>
+        <div class="contact">
         <p>
           <label for="phone">Telefon:</label>
           <input type="tel" name="phone" id="phone" placeholder="Podaj numer" />
@@ -29,9 +30,10 @@
             placeholder="Podaj email"
           />
         </p>
+    </div>
         <p>
           <label for="msg">Wiadomość:</label>
-          <textarea id="msg" name="msg" typ="textarea">
+          <textarea class="text" id="msg" name="msg" typ="textarea">
 Prosze podać problem... </textarea
           >
         </p>

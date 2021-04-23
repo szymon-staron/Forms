@@ -1,8 +1,31 @@
 html {
-    box-sizing: border-box;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  padding: 16px;
+  max-width: 450px;
+  border-style: solid;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.text {
+  height: 130px;
+  width: 100%;
+}
