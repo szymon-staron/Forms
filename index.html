@@ -1,17 +1,79 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formularz</title>
     <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        
+      <form action="">
+        <header><h1>Zgłoszenie</h1></header>
+        <p>
+          <label for="name">Imię i Nazwisko:</label>
+          <input type="text" name="name" id="name" placeholder="Jan Kowalski" />
+        </p>
+        <p>
+          <label for="phone">Telefon:</label>
+          <input type="tel" name="phone" id="phone" placeholder="Podaj numer" />
+        </p>
+        <p>
+          <label for="email">Mail:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Podaj email"
+          />
+        </p>
+        <p>
+          <label for="msg">Wiadomość:</label>
+          <textarea id="msg" name="msg" typ="textarea">
+Prosze podać problem... </textarea
+          >
+        </p>
+
+        <fieldset>
+          <legend>Jak bardzo irytujący jest to problem?</legend>
+          <label for="one">1</label>
+          <input type="radio" name="rating" id="one" />
+          <label for="two">2</label>
+          <input type="radio" name="rating" id="two" />
+          <label for="three">3</label>
+          <input type="radio" name="rating" id="three" />
+          <label for="four">4</label>
+          <input type="radio" name="rating" id="four" />
+          <label for="five">5</label>
+          <input type="radio" name="ratinge" id="five" />
+        </fieldset>
+
+        <label for="myElectronic"> Wybierz swoje urządzenie:</label>
+        <input list="electronic" id="myElectronic" name="myElectronic" />
+        <datalist id="electronic">
+          <option value="Capacitors"></option>
+          <option value="Resistors"></option>
+          <option value="Diodes"></option>
+          <option value="Transistors"></option>
+          <option value="Inductors"></option>
+          <option value="Microcontrollers"></option>
+          <option value="Batteries"></option>
+          <option value="Relays"></option>
+          <option value="Fuses"></option>
+          <option value="Circuit Breakers"></option>
+        </datalist>
+
+        <label for="fault-time">Kiedy wystąpiła usterka:</label>
+
+<input type="datetime-local" id="fault-time"
+       name="fault-time" value="2021-01-12T19:30"
+       min="2018-06-07T00:00" max="2021-06-14T00:00">
+
+
+        <button>Wyśli</button>
+      </form>
     </main>
-    
-</body>
+  </body>
 </html>
